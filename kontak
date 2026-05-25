@@ -1,1 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPL-SMKSJAMBI</title>
 
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+
+        /* BODY */
+        body{
+            background: #f5f7fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background: rgba(0,0,0,0.95) !important;
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            transition: 0.3s;
+        }
+
+        .navbar-brand{
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d6efd !important;
+        }
+
+        .nav-link{
+            color: #fff !important;
+            margin: 0 8px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover{
+            color: #0d6efd !important;
+        }
+
+        .nav-link::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background: #0d6efd;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover::after{
+            width: 100%;
+        }
+
+        /* AGAR CONTENT TIDAK TERTUTUP NAVBAR */
+        .content{
+            margin-top: 90px;
+        }
+
+        /* CAROUSEL */
+        .carousel-item img{
+            height: 85vh;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        /* FOOTER */
+        footer{
+            background: #000;
+        }
+
+        .footer-link{
+            transition: 0.3s;
+        }
+
+        .footer-link:hover{
+            color: #0d6efd !important;
+            padding-left: 5px;
+        }
+
+        footer .btn{
+            transition: 0.3s;
+        }
+
+        footer .btn:hover{
+            transform: translateY(-3px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-code-slash"></i> RPL WEB
+        </a>
+
+        <button class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown">
+
+                    Menu
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="galery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="kontak.html">Kontak</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0" class="active"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="gambar/pc.jpg"
+                class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h1 class="fw-bold">Selamat Datang</h1>
+                    <p>Website Modern Bootstrap Elegant</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="gambar/pc.jpg"
+                class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h1 class="fw-bold">Sekolah Digital</h1>
+                    <p>Modern • Responsive • Elegant</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                 <img src="gambar/pc.jpg"   class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h1 class="fw-bold">Belajar Coding</h1>
+                    <p>HTML CSS JAVASCRIPT PHP SQL</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-light pt-5 pb-3 shadow-lg">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- BRAND -->
+            <div class="col-md-4 mb-4">
+                <h3 class="fw-bold text-primary">
+                    <i class="bi bi-code-slash"></i> RPL Dashboard
+                </h3>
+
+                <p class="text-secondary">
+                    Website modern berbasis Bootstrap untuk kebutuhan sekolah,
+                    kasir, akademik, dan project Rekayasa Perangkat Lunak.
+                </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-md-2 mb-4">
+                <h5 class="fw-bold">Menu</h5>
+
+                <ul class="list-unstyled">
+
+                    <li>
+                        <a href="#" class="text-decoration-none text-light footer-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-decoration-none text-light footer-link">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-decoration-none text-light footer-link">
+                            Laporan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-decoration-none text-light footer-link">
+                            Kontak
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- KONTAK -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Kontak</h5>
+
+                <p>
+                    <i class="bi bi-envelope-fill text-primary"></i>
+                    zainalabidin.dgm@gmail.com
+                </p>
+
+                <p>
+                    <i class="bi bi-whatsapp text-success"></i>
+                    0821-7189-4499
+                </p>
+
+                <p>
+                    <i class="bi bi-geo-alt-fill text-danger"></i>
+                    Medan, Indonesia
+                </p>
+            </div>
+
+            <!-- SOSIAL -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Follow Us</h5>
+
+                <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary">
+
+        <div class="text-center">
+            <p class="mb-0 text-secondary">
+                © 2026 RPL Dashboard | Designed by Mr.Zain
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
